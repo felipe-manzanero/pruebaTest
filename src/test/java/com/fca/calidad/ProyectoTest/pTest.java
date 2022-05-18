@@ -95,7 +95,7 @@ public class pTest {
     driver.findElement(By.xpath("//i")).click();
   }
   
-  
+  /*
   @Test
   public void EliminarTest() throws Exception {
 	//cambiar esta linea luego para correrla en la pagina por:
@@ -109,7 +109,7 @@ public class pTest {
     assertThat(driver.findElement(By.xpath("/html/body/div/div/div[2]/em")).getText(),is("1 person is online"));
     pause(3000);
   }
-  
+  */
   
   private void pause(long mils) {
 	  try {
