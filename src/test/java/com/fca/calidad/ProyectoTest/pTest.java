@@ -90,7 +90,7 @@ public class pTest {
     driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Woah!'])[1]/following::button[1]")).click();
     pause(3000);
     //assert que busca el nuevo elemento agregado "David"
-    assert(driver.findElement(By.xpath("/html/body/div/div/div[2]/table/tbody/tr/td[1]")).getText(),is("David"));
+    assertThat(driver.findElement(By.xpath("/html/body/div/div/div[2]/table/tbody/tr/td[1]")).getText(),is("David"));
     pause(3000);
     driver.findElement(By.xpath("//i")).click();
   }
