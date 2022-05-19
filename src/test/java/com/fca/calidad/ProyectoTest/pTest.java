@@ -103,10 +103,11 @@ public class pTest {
     //driver.get("http://localhost:3000/");
     //fin del cambio
     driver.findElement(By.xpath("//div[@id='root']/div/div[2]/table/tbody/tr/td[5]/button[2]")).click();
+    pause(3000);
     driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='David'])[2]/following::button[1]")).click();
     pause(3000);
     //assert confirmacion de eliminacion de la unica entrada disponible
-    assertThat(driver.findElement(By.xpath("/html/body/div/div/div[2]/em")).getText(),is("1 person is online"));
+    assertThat(driver.findElement(By.xpath("/html/body/div/div/div[2]/em")).getText(),is("No person else is online"));
     pause(3000);
   }
   */
